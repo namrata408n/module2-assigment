@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="uft-8">
+	<title>Reponsive Layout</title>
+	<style>
+		
+	
+	{
+		box-sizing:border-box;
+	}
+
+ h1{
+     margin-bottom: 15px;
+	}
+	p{
+		border:1px solid black;
+		background-color: white;
+		width: 90%;
+		height: 150%;
+		margin-right: auto;
+		margin-left: auto;
+		font-family:Helvetics;
+		color:red;
+	}
+    .row{
+    	width: 50%;
+    }
+
+ /****8 large device only******/
+   @media(min-width: 768px){
+
+ .col-lg-1,.col-lg2,.col-lg-3,{
+ 	float:left;
+ 	border:1px solid green;
+
+ }
+ .col-lg1{
+ 	width: 33.33%;
+ }
+ .col-lg-2{
+ 	width: 66.66%;
+ }
+ .col-lg-3{
+ 	width: 100%;
+
+ }
+}
+/****media devices only***/
+   @media (min-width: 991px)and(max-width:1199px){
+   	.col-md-1,.col-md-2,.col-md-3{
+ 	float:left;
+ 	border:1px solid green;
+
+   }
+   .col-md-1{
+ 	width: 33.33%;
+ }
+ .col-md-2{
+ 	width: 66.6%;
+ }
+ .col-md-3{
+ 	width: 100%;
+
+ }
+ 
+ }
+}
+</style>
+</head>
+<body>
+<h1> Menu</h1>
+<div class="row">
+	<div class="col-lg-1 col-md-3"><p>Chicken  The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl (Gallus gallus). Chickens are one of the most common and widespread domestic animals, with a total population of billion as of 2018[1], up from more than 19 billion in 2011</p></div>
+	<div class="col-lg-1 col-md-3"><p>beef </p></div>
+	
+	<div class="col-lg-1 col-md-6"><p> Susi</p></div>
+    
+   </div>
+</body>
+</html>
